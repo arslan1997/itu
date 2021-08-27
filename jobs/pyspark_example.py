@@ -24,6 +24,7 @@ df_transformed = spark.sql("""
         sum(quantity) as total_products_sold 
     FROM transactions_by_month_tmp_tbl 
     GROUP BY item_type, month
+    ORDER BY item_type
 """)
 
 # Displaying results
