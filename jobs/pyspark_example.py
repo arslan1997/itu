@@ -4,7 +4,7 @@ from pyspark.sql import SparkSession
 # Building Spark Session (Function)
 spark = SparkSession \
     .builder \
-    .appName('TRANSACTIONS_BY_MONTH Spark App') \
+    .appName('TRANSACTIONS_BY_MONTH PySpark App') \
     .getOrCreate()
 
 # Loading data into dataframe
