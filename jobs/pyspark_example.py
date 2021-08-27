@@ -25,9 +25,6 @@ df_transformed = spark.sql("""
     ORDER BY item_type
 """)
 
-# Display Original Loaded Data
-transactions_by_month.show(20, truncate=0)
-
 # Displaying results after transformation
 df_transformed.show(30, truncate=0)
 
