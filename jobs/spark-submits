@@ -1,5 +1,5 @@
 -- Running spark in standalone(local) mode
-spark-submit --master local[1] /home/rahim/itu/jobs/pyspark_example.py
+spark-submit --master local[*] /home/rahim/itu/jobs/pyspark_example.py
 
 -- Running spark in cluster mode with YARN
 spark-submit --master yarn /home/rahim/itu/jobs/pyspark_example.py
